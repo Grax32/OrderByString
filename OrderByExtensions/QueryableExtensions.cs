@@ -53,26 +53,6 @@ namespace OrderByExtensions
             return returnValue;
         }
 
-        private static IOrderedQueryable<TSource> OrderByPropAndDirection2<TSource>(this IQueryable<TSource> source, OrderByProperty property)
-        {
-            var propExpression = Functions.GetExpression<TSource>(property.PropertyName);
-            return property.IsAscending ? source.OrderBy(propExpression) : source.OrderByDescending(propExpression);
-
-        }
-
-        internal static Expression GetGenericExpression<TSource>(string propertyName)
-        {
-            var param = Expression.Parameter(typeof(TSource));
-            var propertyExpression = Expression.Property(param, propertyName);
-
-            return Expression.Lambda<Func<TSource, object>>(
-                Expression.Convert(
-                    propertyExpression,
-                    propertyExpression.Type
-                )
-                , param);
-        }
-
         private static IOrderedQueryable<TSource> OrderByPropAndDirection<TSource>(this IQueryable<TSource> source, OrderByProperty property)
         {
             return property.IsAscending ? _PropertyCache<TSource>.OrderBy(source, property.PropertyName) : _PropertyCache<TSource>.OrderByDescending(source, property.PropertyName);
