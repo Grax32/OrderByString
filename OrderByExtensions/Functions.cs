@@ -19,5 +19,14 @@ namespace OrderByExtensions
                 )
                 , param);
         }
+
+        internal static Expression GetGenericExpression<TSource>(string propertyName)
+        {
+            var param = Expression.Parameter(typeof(TSource));
+
+            return Expression.Lambda(
+                Expression.Property(param, propertyName),
+                param);
+        }
     }
 }

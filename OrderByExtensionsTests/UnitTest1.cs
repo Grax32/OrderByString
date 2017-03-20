@@ -3,6 +3,9 @@ using System.Linq;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OrderByExtensions;
+using static OrderByExtensions.QueryableExtensions;
+using System.Reflection;
+using System.Linq.Expressions;
 
 namespace OrderByExtensionsText
 {
@@ -12,7 +15,7 @@ namespace OrderByExtensionsText
         [TestMethod]
         public void EnumerableTestMethod1()
         {
-            var x = new List<MyClass> { 
+            var x = new List<MyClass> {
                 new MyClass{ Prop1 = "C", Prop2 = "F"},
                 new MyClass{ Prop1 = "C", Prop2 = "G"},
                 new MyClass{ Prop1 = "C", Prop2 = "H"},
@@ -46,7 +49,7 @@ namespace OrderByExtensionsText
         [TestMethod]
         public void EnumerableTestMethodDescending()
         {
-            var x = new List<MyClass> { 
+            var x = new List<MyClass> {
                 new MyClass{ Prop1 = "C", Prop2 = "F"},
                 new MyClass{ Prop1 = "C", Prop2 = "G"},
                 new MyClass{ Prop1 = "C", Prop2 = "H"},
@@ -81,7 +84,7 @@ namespace OrderByExtensionsText
         [TestMethod]
         public void QueryableTestMethod1()
         {
-            var x = new List<MyClass> { 
+            var x = new List<MyClass> {
                 new MyClass{ Prop1 = "C", Prop2 = "F"},
                 new MyClass{ Prop1 = "C", Prop2 = "G"},
                 new MyClass{ Prop1 = "C", Prop2 = "H"},
@@ -116,7 +119,7 @@ namespace OrderByExtensionsText
         [TestMethod]
         public void QueryableTestMethodDescending()
         {
-            var x = new List<MyClass> { 
+            var x = new List<MyClass> {
                 new MyClass{ Prop1 = "C", Prop2 = "F"},
                 new MyClass{ Prop1 = "C", Prop2 = "G"},
                 new MyClass{ Prop1 = "C", Prop2 = "H"},
