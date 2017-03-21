@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="Functions.cs" />
+    <Compile Include="PropertyCache.cs" />
     <Compile Include="QueryableExtensions.cs" />
     <Compile Include="OrderByProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
