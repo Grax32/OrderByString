@@ -1,5 +1,11 @@
+# OrderByString 
+* [Source ![here](https://img.shields.io/github/last-commit/grax32/orderbystring "Last Commit")](https://github.com/Grax32/OrderByString/)
+* [Package ![OrderByString](https://img.shields.io/nuget/v/orderbystring)](https://www.nuget.org/packages/OrderByString/) 
+
+
 # OrderByString
 Extension methods to use strings in LINQ OrderBy and ThenBy methods
+Provided for both IQueryable and IEnumerable
 Enable the extensions methods by including a reference and a "using OrderByExtensions;" statement
 
 Supports the following formats:
