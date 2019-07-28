@@ -1,7 +1,8 @@
 # OrderByString 
-|-|-|
-| Source | [GitHub](https://github.com/Grax32/OrderByString/) | [![here](https://img.shields.io/github/last-commit/grax32/orderbystring "Last Commit")](https://github.com/Grax32/OrderByString/)  |
-| Package | [NuGet](https://www.nuget.org/packages/OrderByString/) | [![OrderByString](https://img.shields.io/nuget/v/orderbystring)](https://www.nuget.org/packages/OrderByString/) 
+
+Source &bull; [GitHub](https://github.com/Grax32/OrderByString/) &bull; [![here](https://img.shields.io/github/last-commit/grax32/orderbystring "Last Commit")](https://github.com/Grax32/OrderByString/)
+
+Package &bull; [NuGet](https://www.nuget.org/packages/OrderByString/) &bull; [![OrderByString](https://img.shields.io/nuget/v/orderbystring)](https://www.nuget.org/packages/OrderByString/) 
 
 
 # OrderByString
